@@ -1,0 +1,12 @@
+{
+  "name": "Progress Gym – Treningslogg",
+  "short_name": "Progress Gym",
+  "description": "Treningslogg med vekt, reps, statistikk og progresjon.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#101210",
+  "theme_color": "#101210",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

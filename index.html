@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#101210" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Progress Gym" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Progress Gym</title>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand"><div class="brand-icon">PG</div><div><div class="brand-name">PROGRESS<span>GYM</span></div><div class="eyebrow">DIN TRENING. DIN PROGRESJON.</div></div></div>
+      <button id="backupBtn" class="icon-btn" aria-label="Eksporter sikkerhetskopi" title="Sikkerhetskopi">↥</button>
+    </header>
+    <main id="view"></main>
+    <nav class="bottom-nav">
+      <button data-tab="home" class="nav-item active"><span>⌂</span><small>Hjem</small></button>
+      <button data-tab="train" class="nav-item"><span>＋</span><small>Trening</small></button>
+      <button data-tab="stats" class="nav-item"><span>▥</span><small>Statistikk</small></button>
+      <button data-tab="history" class="nav-item"><span>◷</span><small>Historikk</small></button>
+    </nav>
+  </div>
+  <input type="file" id="importFile" accept="application/json" hidden />
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
